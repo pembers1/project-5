@@ -2,49 +2,97 @@
 
 [Home](https://github.com/pembers1/portfolio-homepage#data-analytics--business-intelligence-portfolio)
 
-## Objective
-Develop a VBA-based replenishment recommendation engine to support stock output and replenishment decisions by analysing stock, online commitments, future deliveries, sales history and inventory performance.
+## Project Summary
+Developed a VBA-based replenishment review tool to provide a quick overview of output levels, replenishment settings and reserve codes across large datasets.
 
-## Key Features
-* Replenishment recommendation engine
-* Output, restriction and allocation recommendations
-* Advanced calculations based on multiple exceptions
-* Action summaries
+The tool was created to support manual review by highlighting styles that may warrant further investigation. It serves as an optional sense-checking tool rather than a replacement for existing replenishment processes or commercial decision-making.
 
-## Tools Used
+## Business Problem
+Reviewing replenishment outputs across hundreds of styles can require significant manual analysis.
+
+While the existing process remains the primary method of review, there was no simple way to quickly identify styles where stock outputs or replenishment settings appeared unusual and may benefit from additional investigation.
+
+## Solution Developed
+Developed a VBA-based tool that analyses stock position, warehouse availability, future deliveries and recent trading performance to generate indicative replenishment recommendations and exception reports.
+
+The objective was to provide a quick secondary review process that could highlight potential anomalies and support manual decision-making.
+
+## Methodology
+
+
+
+
+## Business Impact
+Improved Review Efficiency
+* Provides a quick overview of replenishment outputs across large datasets.
+
+Faster Identification of Exceptions
+* Highlights styles that may require additional review.
+
+Supports Decision Making
+* Acts as a supplementary review tool alongside existing replenishment processes.
+
+Reduced Manual Searching
+* Allows users to focus attention on styles where outputs appear unusual or inconsistent.
+
+## Tools & Technologies Used
+* MAPPER
 * Microsoft Excel
+* Office Scripts
 * VBA (Visual Basic for Applications)
 
 ## Screenshots & Workflow Evidence
-The screenshots below demonstrate the workflow used to create a professional, clear, and interactive dashboard about inventory health. They show how stock data was extracted, transformed, and displayed in Power BI.
+The screenshots below demonstrate the workflow used to identify size-level inventory imbalances across the retail network. They show how stock data was extracted, transformed, analysed, and automatically flagged to highlight styles with unusual size distributions that may require further investigation.
 
-To protect commercially sensitive information, all screenshots used anonymized or representative data.
+To protect commercially sensitive information, all screenshots used anonymized or representative data. The workflow, logic, and outputs accurately reflect the process used within the solution.
 
-### Screenshot 1: Raw Dataset
-Raw retail inventory dataset used for Power BI analysis and dashboard development.
+### Screenshot 1: Data Gathering in MAPPER
+This screenshot shows the custom MAPPER query used to retrieve inventory data by style, size, and location across the business. The report was specifically designed to provide the detailed stock information required for identifying size distribution anomalies.
 
-![Image Alt](https://github.com/pembers1/project-4/blob/main/Screenshot%202026-07-14%20144829.png?raw=true)
+![Image Alt](https://github.com/pembers1/project-1/blob/main/Screenshot%202026-07-08%20123143.png?raw=true)
 
-### Screenshot 2: Power Query Transformation
-Data preparation and transformation in Power Query, including date conversion and creation of reporting fields.
+### Screenshot 2: Data Transformed in Excel
+This screenshot demonstrates the exported inventory data was imported into Microsoft Excel and prepared for automated analysis. The data structure was organised to support size-level calculations and ensure consistent processing across large inventory datasets.
 
-![Image Alt](https://github.com/pembers1/project-4/blob/main/Screenshot%202026-07-14%20145632.png?raw=true)
+![Image Alt](https://github.com/pembers1/project-1/blob/main/Screenshot%202026-07-08%20140219.png?raw=true)
 
-### Screenshot 3: Power BI Workspace
-Power BI development environment used to build the inventory reporting solution.
+### Screenshot 3: Office Script Automation
+This screenshot shows the Office Script used to automate the analysis process. The script applies predefined business rules, calculates size distribution percentages, and removes the need for manual review of individual size positions.
 
-![Image Alt](https://github.com/pembers1/project-4/blob/main/Screenshot%202026-07-14%20150118.png?raw=true)
+The automation standardises the process, improves consistency, and significantly reduces the time required to identify potential inventory issues.
 
-### Screenshot 4: Finished Dashboard
-Completed Retail Inventory Health Dashboard with KPI reporting, filtering, inventory analysis, and stock-risk monitoring.
+![Image Alt](https://github.com/pembers1/project-1/blob/main/Screenshot%202026-07-08%20140616.png?raw=true)
 
-![Image Alt](https://github.com/pembers1/project-4/blob/main/Screenshot%202026-07-14%20155103.png?raw=true)
+### Screenshot 4: Office Script Automation
+This screenshot shows the output after the automation has been executed. The model calculates the percentage contribution of each size against the total stock position for a style and automatically flags styles where a single size exceeds the defined threshold.
+
+Items highlighted as Overweight indicate an unusually high concentration of stock in a particular size and are automatically marked for further investigation.
+
+These anomalies can often indicate marketplace listing issues, missing sizes on online channels, inventory imbalances, or potential stock recall opportunities
+
+![Image Alt](https://github.com/pembers1/project-1/blob/main/Screenshot%202026-07-08%20140630.png?raw=true)
+
+### Screenshot 5: Filtered Exception Reporting
+This screenshot demonstrates how the automated output can be filtered to focus exclusively on flagged styles. This exception-based approach allows stock controllers to concentrate on potential issues rather than manually reviewing every style within the dataset.
+
+![Image Alt](https://github.com/pembers1/project-1/blob/main/Screenshot%202026-07-08%20141056.png?raw=true)
+
+### Screenshot 6: Adjustable Business Rules
+This screenshot shows how the threshold used to generate an Overweight flag can be configured within the Office Script.
+
+In this example, styles are flagged when a single size accounts for more than 60% of total stock for that style. By adjusting this value, the tool can be tailored to match changing business requirements and inventory management strategies.
+
+![Image Alt](https://github.com/pembers1/project-1/blob/main/Screenshot%202026-07-08%20141148.png?raw=true)
 
 ## Skills Demonstrated
-* Data Exportation
+* Data Preparation
 * Data Transformation
-* Data Cleaning
-* Replenishment Planning
-* Inventory Optimisation
 * Data Analysis
-* VBA Development
+* Inventory Analysis
+* Office Scripts
+* Excel Automation
+* Exception Reporting
+* Business Analysis
+* Business Process Improvement
+* Root Cause Investigation
+* Data-Driven Decision Making
